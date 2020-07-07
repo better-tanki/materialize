@@ -1,0 +1,123 @@
+div[data-style="QuestComponentStyle-content"] {
+	background: transparent;
+
+	div[data-style="QuestBlockComponentStyle-dailyMission"] {
+		background: #ffffff20;
+
+		&:last-child {
+			background-color: #ffffff10;
+
+			transition: 200ms;
+
+			&:hover {
+				background-color: #ffffff20;
+			}
+		}
+
+		div[data-style="QuestDescriptionComponentStyled-aboutMission"] {
+			& > img {
+				display: none;
+			}
+		}
+	}
+
+	/* Special */
+
+	div[data-style="MainQuestComponentStyle-container"],
+	div[data-style="MainQuestComponentStyle-container MainQuestComponentStyle-lockedContainerBg"] {
+		border-left: none;
+
+		background-color: #ffffff10;
+
+		transition: 200ms;
+
+		&:hover {
+			background-color: #ffffff20;
+		}
+
+		div[data-style="MainQuestComponentStyle-mainContainer"] {
+			div[data-style="MainQuestComponentStyle-descriptionContainer"] {
+				border-right: none;
+		
+				& > img {
+					display: none;
+				}
+			}
+
+			div[data-style="MainQuestComponentStyle-rewardsContainer"] {
+				div[data-style="QuestRewardComponentStyle-reward"] {
+					background: #00000040;
+
+					transition: 200ms;
+						
+					&:hover {
+						background: #ffffff10;
+					}
+
+					div[data-style="QuestRewardsComponentStyle-inventory"] {
+						& > img {
+							width: auto;
+						}
+					}
+				}
+			}
+
+			div[data-style="MainQuestComponentStyle-buttonContainer"] {
+				background-color: #ffffff05;
+		
+				transition: 200ms;
+		
+				&:hover {
+					background-color: #ffffff15;
+				}
+			}
+
+			progress[data-style="MainQuestComponentStyle-progress"] {
+				margin-left: 1.438em;
+			}
+		}
+	}
+
+	/* Challenges */
+	
+	div[data-style="QuestsChallengesComponentStyle-containerParametrsChallenge"] {
+		div[data-style="ChallengeInfoComponentStyle-blockStarsCount"],
+		div[data-style="ChallengeTimerComponentStyle-blockTimer"],
+		div[data-style="QuestsChallengesComponentStyle-containerTiers"],
+		div[data-style="ChallengePurchaseComponentStyle-blockPurchase"] {
+			background: transparent;
+		}
+
+		div[data-style="ChallengeTimerComponentStyle-blockTimer"] {
+			border-right: none;
+		}
+
+		div[data-style="ChallengeTierComponentStyle-blockTier"] {
+			div[data-style="TierHeaderComponentStyle-descriptionTier"] {
+				border: none;
+				border-bottom: 0.313em solid #ffffff1a;
+			
+				div[data-style="TierHeaderComponentStyle-tierActive"] {
+					top: unset;
+					
+					border: none;
+					border-bottom: 0.313em solid #ffbc09;
+
+					animation: 2000ms ease 0s infinite normal none running xSGQL;
+				}
+			}
+
+			div[data-style="ChallengeTierComponentStyle-commonBlock"] {
+				opacity: 1;
+			
+				div[data-style="PremiumTierItemComponentStyle-tierPremium"] {
+					background: #ffbc0930;
+				}
+			}
+		}
+
+		div[data-style="QuestsChallengesComponentStyle-premiumTier QuestsChallengesComponentStyle-tiers QuestsChallengesComponentStyle-descriptionTiers"] {
+			opacity: 1;
+		}
+	}
+}

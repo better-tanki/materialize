@@ -1,0 +1,242 @@
+div[data-style="Common-container"] {
+	div[data-style="Common-content"] {
+		background: transparent;
+
+		div[data-style="BattleTableStyle-containerButtonsPick"] > div {
+			border: none;
+		
+			background-color: transparent;
+		}
+
+		table[data-style="TableComponentStyle-table"] {
+			thead {
+				margin-bottom: 1rem;
+
+				border-bottom: 2px solid #ffffff63;
+
+				tr > th {
+					background-color: transparent;
+				}
+			}
+
+			tbody[data-style="TableComponentStyle-tBody"] {
+				tr {
+					background-color: transparent;
+			
+					transition: background-color 100ms ease-in-out;
+
+					&:hover {
+						background-color: #ffffff0f;
+					}
+				}
+			}
+		}
+
+		div[data-style="BattleTableStyle-buttonCreate"] {
+			background: #ffffff25;
+
+			cursor: pointer;
+
+			&:hover {
+				background: #ffffff45;
+			}
+		}
+	}
+}
+
+/* Battle info */
+table[data-style="UsersTableStyle-containerBattleListCommands"] {
+	tbody[data-style="UsersTableStyle-scrollCommandTable"] {
+		tr > td {
+			background-color: #ffffff17;
+		}
+	}
+}
+
+div[data-style="BattleInfoComponentStyle-blockContentCenter"] > div:first-child {
+	background-color: #ffffff17;
+
+	&:hover {
+		background-color: #ffffff24;
+	}
+}
+
+div[data-style="BattleInfoNavigationStyle-blockButtonsQE"] {
+	background-color: #ffffff17;
+}
+
+div[data-style="BattleInfoComponentStyle-blockLink"] {
+	background-color: #ffffff17;
+}
+
+div[data-style="CustomOptionsComponentStyle-customOptions"] {
+	background-color: #ffffff17;
+
+	div[data-style="CustomOptionsComponentStyle-commonBlockIconRanks"] {
+		margin-bottom: 0.2rem;
+
+		div {
+			/*width: 1.5rem;
+			height: 1.5rem;*/
+
+			margin: 0;
+			margin-right: 0.2rem;
+		}
+	}
+
+	div[data-style="CustomOptionsComponentStyle-commonBlockAvailableRanks"] > span,
+	div[data-style="BattleOptionsSectionComponentStyle-customOption Font-normal"] > span {
+		opacity: 1;
+		
+		color: #ffffff9e;
+	}
+
+	div[data-style="OptionsTextComponentStyle-commonBlockCustomItems OptionsTextComponentStyle-originalCustom"] {
+		color: #ffffffe0;
+	}
+}
+
+div[data-style="JoinToBattleComponentStyle-buttonInviteFriends"] {
+	background-color: #ffffff17;
+}
+
+div[data-style="JoinToBattleComponentStyle-containerButtonsJoin"] {
+	div[data-style="JoinToBattleComponentStyle-buttonJoinBlue JoinToBattleComponentStyle-buttonJoin"],
+	div[data-style="JoinToBattleComponentStyle-buttonJoinRed JoinToBattleComponentStyle-buttonJoin"],
+	div[data-style="JoinToBattleComponentStyle-buttonJoin"] {
+		background-color: #ffffff17;
+
+		&:hover {
+			background-color: #ffffff24;
+		}
+	}
+	
+	div[data-style="ButtonComponentStyle-disabled JoinToBattleComponentStyle-buttonJoinBlue JoinToBattleComponentStyle-buttonJoin"],
+	div[data-style="ButtonComponentStyle-disabled JoinToBattleComponentStyle-buttonJoinRed JoinToBattleComponentStyle-buttonJoin"],
+	div[data-style="ButtonComponentStyle-disabled JoinToBattleComponentStyle-buttonJoin"] {
+		background-color: #ffffff08;
+	}
+}
+
+/* Create battle */
+div[data-style="BattleCreateComponentStyle-commonBlockCreateBattle"] {
+	div[data-style="BattleCreateComponentStyle-buttonHeight"] {
+		background-color: #ffffff17;
+
+		&:hover {
+			background-color: #ffffff24;
+		}
+	}
+
+	div[data-style="BattleCreateComponentStyle-buttonResetAll"] {
+		background-color: #ffffff17;
+
+		&:hover {
+			background-color: #ffffff24;
+		}
+	}
+
+	div[data-style="InformationComponentStyle-buttonCustomOptions"] {
+		background-color: #ffffff17;
+	}
+
+	div[data-style="CustomOptionsComponentStyle-commonBlockIconRanks"] {
+		margin-bottom: 0.2rem;
+
+		div {
+			/*width: 1.5rem;
+			height: 1.5rem;*/
+
+			margin: 0;
+			margin-right: 0.2rem;
+		}
+	}
+
+	div[data-style="VerticalScrollStyle-innerContainerStyle DropDownStyle-innerContainerStyle"] {
+		div[data-style="DropDownStyle-dropdownOption"] {
+			background-color: transparent;
+			
+			&:hover {
+				background-color: #ffffff29;
+			}
+		}
+	}
+
+	form[data-style="BattleCreateComponentStyle-formNameBattle"] > input[type="text"],
+	div[data-style="DropDownStyle-dropdownRoot"],
+	input[data-style="InputComponentStyle-defaultStyle"] {
+		border: none;
+		border-bottom: 2px solid #ffffff63;
+	
+		background-color: transparent;
+
+		&:focus {
+			border-bottom-color: #ffffffcc;
+		}
+
+		div[data-style="DropDownStyle-dropdownControl"] {
+			border: none;
+		}
+	}
+}
+
+div[data-style="BattleCreateComponentStyle-commonContainerButtons"] {
+	div {
+		background-color: #ffffff17;
+
+		&:hover {
+			background-color: #ffffff24;
+		}
+	}
+}
+
+div[data-style="BattleTabStatisticComponentStyle-containerInsideResults BattleTabStatisticComponentStyle-containerInside"] {
+	background: #00000070;
+
+	backdrop-filter: blur(2px);
+
+	div[data-style="BattleTabStatisticComponentStyle-header"] {
+		padding: 0.5rem 0;
+		
+		border-top: none;
+
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+
+	div[data-style="BattleTabStatisticComponentStyle-dmTableContainer BattleTabStatisticComponentStyle-tableContainer"] {
+		thead {
+			margin-bottom: 1rem;
+
+			border-bottom: 2px solid #ffffff63;
+
+			tr > th {
+				background-color: transparent;
+			}
+		}
+
+		tbody {
+			tr {
+				background-color: #ffffff15;
+			}
+		}
+	}
+}
+
+/* Play modes */
+div[data-style="BattlePickComponentStyle-blockCenter"] {
+	div[data-style="BattlePickComponentStyle-blockCard"] {
+		div[data-style="BattlePickComponentStyle-commonBlock"] {
+			div[data-style="BattlePickComponentStyle-topGradient"],
+			div[data-style="BattlePickComponentStyle-bottomGradient"] {
+				background: transparent;
+			}
+		}
+
+		& > img {
+			display: none;
+		}
+	}
+}

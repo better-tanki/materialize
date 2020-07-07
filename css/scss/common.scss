@@ -1,0 +1,124 @@
+div[data-style="Common-content Common-background"] {
+	background: none;
+}
+
+div[data-style="Common-container"] {
+	background: #00000080;
+
+	div[data-style="SearchInputComponentStyle-searchInput"] {
+		border: none;
+		border-bottom: 2px solid #ffffff63;
+	
+		background-color: transparent;
+
+    transition: border-bottom-color 200ms;
+
+		&:focus {
+			border-bottom-color: #ffffffcc;
+		}
+	}
+	
+	div[data-style="BreadcrumbsComponentStyle-headerContainer Common-backgroundColor"] {
+		border: none;
+	
+		background: transparent;
+
+		div[data-style="BreadcrumbsComponentStyle-backButton Common-backgroundColor"] {
+			border: none;
+			
+			background: transparent;
+		}
+	
+		div[data-style="BreadcrumbsComponentStyle-rightButtonsContainer"] {
+			div {
+				background: transparent;
+			}
+		
+			&::before {
+				display: none;
+			}
+		}
+	}
+
+	div[data-style="Common-buttonQ Common-buttonQE"],
+	div[data-style="Common-buttonE Common-buttonQE"] {
+		background-color: transparent;
+		border: none;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}
+
+/* Tooltips */
+div[data-style="TooltipStyle-tooltip"] {
+	background-color: #00000080;
+
+	p[data-style="TooltipStyle-content"] {
+		color: #ffffff;
+	}
+
+	div[data-style="TooltipStyle-leftTopCorner TooltipStyle-corner"],
+	div[data-style="TooltipStyle-rightTopCorner TooltipStyle-corner"],
+	div[data-style="TooltipStyle-leftBottomCorner TooltipStyle-corner"],
+	div[data-style="TooltipStyle-rightBottomCorner TooltipStyle-corner"] {
+		display: none;
+	}
+}
+
+/* Modals */
+div#modal-root {
+	div.modal {
+		div[data-style="ContextMenuStyle-menu"] {
+			background: #ffffff20;
+
+			backdrop-filter: blur(2px) brightness(0.5);
+
+			div[data-style="ContextMenuStyle-menuItem"] {
+				transition: 200ms;
+
+				&:hover {
+					background: #ffffff1a;
+				}
+			}
+		}
+	}
+
+	div.modal.hover {
+		background-color: #00000050;
+
+		& > div {
+			background: #ffffff20;
+
+			backdrop-filter: blur(2px) brightness(0.5);
+
+			& > div:first-child,
+			& > div:last-child {
+				background: transparent;
+			}
+
+			div[data-style="DialogContainerComponentStyle-mark"] {
+				display: none;
+			}
+
+			div[data-style="DialogContainerComponentStyle-imgLine"] {
+				display: none;
+			}
+		}
+	}
+
+	div[data-style="PopupMessageComponentStyle-buttons"] {
+		border: none;
+
+		background: transparent;
+
+		&:hover {
+			background: transparent;
+		}
+	}
+
+	div[data-style="ContextMenuStyle-decoration ContextMenuStyle-menuItemRank"] {
+		display: none;
+	}
+}

@@ -1,0 +1,47 @@
+div[data-style="Common-container"] {
+	div[data-style="ClanCommonStyle-content"] {
+		background: transparent;
+
+		div[data-style="ClanHeaderComponentStyle-blockInform"] {
+			background: #ffffff30;
+
+			div[data-style="ClanStatisticsComponentStyle-clan"] > div {
+				background: #00000020;
+			}
+		}
+
+		div[data-style="ClanInfoComponentStyle-messageClan"] {
+			background: #ffffff30;
+		}
+
+		div[data-style="ClanCommonStyle-buttonInvite ClanProfileEditComponentStyle-buttonCancel"] {
+			background-color: #ffffff17;
+	
+			&:hover {
+				background-color: #ffffff24;
+			}
+		}
+
+		table[data-style="TableComponentStyle-table"] {
+			thead {
+				border-bottom: 2px solid #ffffff63;
+
+				tr > th {
+					background: transparent;
+				}
+			}
+
+			tbody[data-style="TableComponentStyle-tBody"] {
+				tr[data-style="ClanCommonStyle-row"] {
+					background-color: #ffffff08;
+			
+					transition: background-color 100ms ease-in-out;
+
+					&:hover {
+						background-color: #ffffff18;
+					}
+				}
+			}
+		}
+	}
+}

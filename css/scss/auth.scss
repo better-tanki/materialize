@@ -1,0 +1,154 @@
+div[data-style="Common-content Common-background"] {
+	/* Auth header */
+	div[data-style="HeaderComponentStyle-linkBar"] {
+		background: transparent;
+		
+		ul[data-style="HeaderComponentStyle-listArray"] > li {
+			display: none;
+		}
+
+		div[data-style="DropDownStyle-dropdownRoot"] {
+			div[data-style="DropDownStyle-dropdownControl HeaderComponentStyle-widthDropDown"] {
+				border: none;
+				border-bottom: 2px solid #ffffff63;
+
+				background-color: transparent;
+			}
+
+			div[data-style="VerticalScrollStyle-outerContainerStyle DropDownStyle-outerContainerStyle DropDownStyle-dropdownMenu"] {
+				background-color: #00000070;
+
+				backdrop-filter: blur(2px);
+
+				div[data-style="VerticalScrollStyle-innerContainerStyle DropDownStyle-innerContainerStyle"] {
+					& > div > div[data-style="DropDownStyle-dropdownOption"] {
+						background-color: transparent;
+
+						transition: background-color 200ms;
+
+						&:hover {
+							background-color: #ffffff20;
+						}
+					}
+				}
+				
+				&::-webkit-scrollbar-thumb {
+					background-color: #ffffffcc;
+					border-radius: 0px;
+				}
+				
+				&::-webkit-scrollbar-track {
+					background-color: #ffffff20;
+				}
+			}
+		}
+	}
+
+	/* Auth footer */
+	div[data-style="HeaderComponentStyle-headerLinkBar HeaderComponentStyle-linkBar"] {
+		background: #00000030;
+
+		div[data-style="HeaderComponentStyle-blockIconSocialNetwork"] > a {
+			display: none;
+		}
+	}
+
+	/* Horizontal lines */
+	div[data-style="HeaderComponentStyle-lineBlock"] {
+		display: none;
+	}
+}
+
+div[data-style="EntranceComponentStyle-ContainerForm"] {
+	min-width: 50em;
+
+	background: #00000090;
+
+	/* Common */
+	div[data-style="EntranceComponentStyle-blockCheckedLink"] {
+		width: 46.25em;
+	}
+	
+	input[type="text"],
+	input[type="password"] {
+		width: 46.25em;
+	
+		border: none;
+		border-bottom: 2px solid #ffffff63;
+	
+		background-color: transparent;
+
+    transition: border-bottom-color 200ms;
+
+		&:focus {
+			border-bottom-color: #ffffffcc;
+		}
+	
+		&::placeholder {
+			color: transparent;
+		}
+	}
+	
+	label[data-style="EntranceComponentStyle-containerInput Font-normal"] {
+		width: 46.25em;
+	
+		margin-bottom: 0.5em;
+	}
+	
+	img[data-style="EntranceComponentStyle-yeLine"] {
+		width: 10.5em;
+	
+		object-fit: cover;
+	}
+	
+	a[data-style="EntranceComponentStyle-activeLink"] span {
+		color: #d2d2d2;
+	}
+	
+	span[data-style="LoginComponentStyle-noActiveLink Font-bold Font-normal"] {
+		color: #d2d2d2;
+	}
+	
+	/* Registration */
+	div[data-style="RegistrationComponentStyle-licenseAgreement"] {
+		width: 100%;
+	}
+	
+	div[data-style="EntranceComponentStyle-blockInformation"] {
+		width: auto;
+		height: 100%;
+
+		padding: 1em;
+		margin-top: 1em;
+
+		font-size: 1.5em;
+
+		background-color: #ffffff0f;
+	}
+	
+	div[data-style="EntranceComponentStyle-buttonActive EntranceComponentStyle-styleButtons Font-normal RegistrationComponentStyle-buttonEndActive Font-normal"] {
+		width: 46.25em;
+
+		background-color: #3535359c;
+
+		&:hover {
+			background-color: #444444a8;
+		}
+	}
+		
+	div[data-style="ButtonComponentStyle-disabled EntranceComponentStyle-buttonNoActive EntranceComponentStyle-styleButtons Font-normal Font-normal RegistrationComponentStyle-buttonEnd"] {
+		width: 46.25em;
+
+		background-color: #3535359c;
+	}
+	
+	div[data-style="LoginComponentStyle-socialNetworks"] {
+		width: 46.25em;
+
+		background: #49494923;
+	}
+	
+	img[data-style="RegistrationComponentStyle-notification"] {
+		margin: inherit;
+	}
+}

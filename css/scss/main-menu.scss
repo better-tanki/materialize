@@ -1,0 +1,177 @@
+div[data-style="MainScreenComponentStyle-gradientBlock"], div[data-style="MainScreenComponentStyle-gradientBlockRight"] {
+	background: transparent;
+}
+
+div[data-style="MainScreenComponentStyle-containerPanel"] {
+	border: none;
+
+	background: #00000060;
+
+	&::before {
+		display: none;
+	}
+	
+	div[data-style="UserScoreComponentStyle-blockRightPanel"] div {
+		background-color: transparent;
+	}
+	
+	div[data-style="UserInfoContainerStyle-blockShadow"] {
+		background-color: transparent;
+	}
+
+	div[data-style="UserInfoContainerStyle-blockCenterPanel"] {
+		border: none;
+	}
+
+	//Premium account
+	div.ioLhrE {
+		background: #00000060;
+	}
+}
+
+footer[data-style="FooterComponent-footer"] {
+	background: #00000030;
+
+	div[data-style="ChatToggleComponentStyle-toggleButton"] {
+		background-color: transparent;
+
+		&:hover {
+			background-color: #00000010;
+		}
+	}
+}
+
+div[data-style="BattlePassLobbyComponentStyle-menuBattlePass"] {
+	background-color: #00000030;
+	
+	transition: background-color 250ms ease;
+	
+	&:hover {
+		background-color: #00000055;
+	}
+
+	div[data-style="BattlePassLobbyComponentStyle-descriptionMenuPass"] {
+		background-color: transparent;
+	}
+}
+
+div[data-style="AnnouncementHomeScreenComponentStyle-mainBackGroundContainer"] {
+	background-color: #00000080;
+
+	div[data-style="AnnouncementHomeScreenComponentStyle-headerContainer"] {
+		background-color: transparent;
+	}
+
+	div[data-style="AnnouncementHomeScreenComponentStyle-announceDescriptionContainer"] {
+		background-color: transparent;
+	}
+
+	div[data-style="AnnouncementHomeScreenComponentStyle-navigationContainerCenter AnnouncementHomeScreenComponentStyle-navigationContainer"] {
+		background-color: transparent;
+	}
+}
+
+div[data-style="Common-blockCenter MainScreenComponentStyle-containerForMenuGradient"] {
+	width: 100%;
+
+	//Play buttons container
+	div.cFCXW {
+		position: relative;
+
+		top: 7em;
+
+		margin: 0 auto;
+
+		/* Play buttons */
+		div[data-style="MainScreenComponentStyle-playButtonContainer MainScreenComponentStyle-buttonPlay MainScreenComponentStyle-activeItem"] {
+			margin: 0;
+
+			background-color: #00000030;
+		
+			div[data-style="MainScreenComponentStyle-animationPlayBlock"] {
+				background-image: none;
+			}
+		}
+		
+		div[data-style="MainScreenComponentStyle-playButtonContainer MainScreenComponentStyle-buttonBattlePick"] {
+			margin: 0;
+			margin-left: 0.5rem;
+
+			background-color: #00000030;
+		}
+	}
+
+	div[data-style="MainScreenComponentStyle-blockMainMenu"] {
+		width: max-content;
+
+		top: 10em;
+
+		& > ul {
+			& > li[data-style="PrimaryMenuItemComponentStyle-itemCommonLi MainScreenComponentStyle-menuItemContainer"] {
+				div[data-style="PrimaryMenuItemComponentStyle-discountNotificationContainer"] {
+					justify-content: center;
+					
+					height: 2.1em;
+
+					background: #000000ad;
+
+					& > img {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* News */
+div[data-style="Common-container"] {
+	div[data-style="NewsComponentStyle-newsWindow"] {
+		background: #00000090;
+	
+		backdrop-filter: blur(2px);
+	}
+
+	div[data-style="NewsComponentStyle-closeArea"] {
+		background-color: #00000075;
+
+		backdrop-filter: blur(1px);
+	}
+}
+
+/* Chat */
+div[data-style="ChatComponentStyle-chatWindow"] {
+	background: #00000090;
+
+	backdrop-filter: blur(2px);
+
+	div[data-style="ChatComponentStyle-upMenu"] {
+		background: transparent;
+	}
+
+	div[data-style="ChatComponentStyle-inputContainer Common-backgroundColor"] {
+		border: none;
+		border-bottom: 2px solid #ffffff63;
+	
+		background-color: transparent;
+
+    transition: border-bottom-color 200ms;
+
+		&:focus {
+			border-bottom-color: #ffffffcc;
+		}
+	}
+}
+
+div[data-style="ChatComponentStyle-closeArea"] {
+	background-color: #00000075;
+	
+	backdrop-filter: blur(1px);
+}
+
+/* Pause menu */
+div[data-style="BattlePauseMenuComponentStyle-container"] {
+	& > div {
+		transition: background-color 250ms;
+	}
+}

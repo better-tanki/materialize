@@ -1,0 +1,150 @@
+div[data-style="GarageCommonStyle-garageContainer"] {
+	div[data-style="TankParametersStyle-leftParamsContainer"] {
+		div[data-style="TankParametersStyle-marginBlockGear Common-blockGear"] {
+			span[data-style="Common-linesContainer"] {
+				display: none;
+			}
+		}
+
+		div[data-style="TankParametersStyle-parametersBlockGear"] {
+			img[data-style="TankParametersStyle-stick"] {
+				display: none;
+			}
+		}
+	}
+
+	div[data-style="MountedItemsStyle-containerBlockGarage"] > div {
+		border: none;
+
+		background-color: #ffffff12;
+
+		transition: background-color 200ms;
+
+		&:hover {
+			background-color: #ffffff33;
+		}
+
+		div[data-style="MountedItemsStyle-previewContainer"] {
+			img[data-style="GarageItemComponentStyle-pumping"] {
+				display: none;
+			}
+		}
+	}
+
+	div[data-style="Style-itemsWrapper"] {
+		div[data-style="Style-itemsContainer"] > div {
+			border-left: none;
+			border-right: none;
+			border-bottom: none;
+		}
+	}
+			
+	img[data-style="GarageCommonStyle-stick"],
+	img[data-style="GarageDronesComponentStyle-stickDrones GarageCommonStyle-stick"],
+	img[data-style="GarageProtectionsComponentStyle-stickBig"] {
+		display: none;
+	}
+
+	//Yellow stripes
+	div.bFifRD {
+		display: none;
+	}
+
+	img[data-style="GarageProtectionsComponentStyle-imagesYellowLine"] {
+		display: none;
+	}
+
+	div[data-style="PriceButtonComponentStyle-priceContainer"] {
+		//Next price (supplies)
+		div.kYPeqe {
+			display: none;
+		}
+	}
+				
+	span[data-style="PriceButtonComponentStyle-discountLabel"],
+	span[data-style="PaintsCollectionComponentStyle-discountLabel"] {
+		padding: 2px 4px;
+
+		background-color: #ff7c7caa;
+	}
+
+	/* Paints */
+
+	div[data-style="PaintsCollectionComponentStyle-containerPaints"] {
+		div[data-style="PaintsCollectionComponentStyle-commonBlockPaint"] > div {
+			background-color: transparent;
+		}
+
+		div[data-style="VerticalScrollStyle-outerContainerStyle PaintsCollectionComponentStyle-paintContainer"] {
+			div[data-style="PaintsCollectionComponentStyle-paint PaintsCollectionComponentStyle-activePaint"] {
+				border-left: none;
+				border-right: none;
+				border-bottom: none;
+			}
+
+			div[data-style="PaintsCollectionComponentStyle-paint"] {
+			}
+
+			//Paint name
+			div.iXKkGQ > span {
+				opacity: 1;
+			}
+
+			//Paint preview
+			img.lepGaf {
+				opacity: 1;
+
+				filter: brightness(0.4);
+			}
+		}
+
+		div[data-style="PaintsCollectionComponentStyle-descriptionBlockCollection"] {
+			div[data-style="PaintsCollectionComponentStyle-descriptionBlockCollection"] {
+				& > h3 {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	div[data-style="SkinsAndAlterationsStyle-blockParameterAlteration"] {
+		div[data-style="Style-skinsTable"] > div {
+
+		}
+
+		div[data-style="Style-containerAccelerators"] {
+			div[data-style="GarageTurretsAlterationsComponentStyle-blockParametersForAlteration"] {
+				border-top: none;
+			}
+
+			div[data-style="SkinsAndAlterationsStyle-captionAndIconEquipped"] {
+				background-color: transparent;
+			}
+
+			div[data-style="GarageTurretsAlterationsComponentStyle-blockDescription SkinsAndAlterationsStyle-descriptionEquipped"] {
+				background-color: transparent;
+			}
+
+			div[data-style="AlterationButtonStyle-buyButton AlterationButtonStyle-commonButton"] {
+				background-color: #ffffff20;
+
+				transition: background-color 250ms;
+
+				&:hover {
+					background-color: #ffffff30;
+				}
+			}
+		}
+	}
+
+	div[data-style="InfoBlockStyle-blockInfo"] {
+		div[data-style="InfoBlockStyle-leftLine"],
+		div[data-style="InfoBlockStyle-string"] {
+			background-color: transparent;
+		}
+
+		div[data-style="InfoBlockStyle-leftLine"] {
+			border-right: none;
+		}
+	}
+}
